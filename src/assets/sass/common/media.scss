@@ -1,0 +1,31 @@
+// @media (max-width:1100px) {
+//     .nav {
+//         &_box {
+//             padding: 20px;
+
+//             &_title {
+//                 font-size: 25px;
+//                 line-height: 70px;
+//             }
+//         }
+//     }
+
+//     .intro {
+//         &_box {
+
+//             &_title {
+//                 font-size: 30px;
+//                 line-height: 50px;
+//                 padding: 80px 80px 30px 0;
+//             }
+//         }
+//     }
+
+// }
+
+@mixin media($size) {
+    @media (max-width:"#{$size}px") {
+        @content;
+    }
+}
+

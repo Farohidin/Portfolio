@@ -1,0 +1,72 @@
+.service {
+    &_cards {
+        background-color: #010032;
+        border-radius: 20px;
+        color: #fff;
+        
+        
+        &_title {
+            border-bottom: 2px solid #fff;
+            text-align: center;
+            font-weight: 500;
+            @include media(700){
+                font-size: 20px;
+            }
+            @include media(510){
+                font-size: 17px;
+            }
+            @include media(400){
+                font-size: 10px;
+            }
+        }
+        &_text {
+            font-weight: 400;
+            margin: 5px;
+        }
+        &_card {
+            padding: 30px 30px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            transition: box-shadow 0.3s ease;
+            border-radius: 20px;
+            @include media(950){
+                padding: 20px 20px;
+            }
+            @include media(700){
+                padding: 15px;
+                
+            }
+            @include media(500){
+                padding: 15px;
+                width: 100%;
+                height: 100%;
+            }
+            
+            &:hover {
+                box-shadow: inset 0 0 30px #4543E8;
+                border-radius: 20px;
+            }
+        }
+    }
+    img {
+        width: 150px;
+        height: 150px;
+        @include media(855) {
+            width: 70px;
+            height: 70px;
+        }
+        @include media(500) {
+            width: 50px;
+            height: 50px;
+        }
+        @include media(400) {
+            width: 40px;
+            height: 40px;
+        }
+        
+    }
+}
